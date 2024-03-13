@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int n,sum=0;
+    scanf("%d",&n);
+    int c=0;
+    int a=n,b=n;
+    while(n>0){
+        c++;
+        n/=10;
+    }
+    while(a>0){
+        int r=a%10;
+        int l=c,p=l;
+        while(l--){
+            p=p*r;
+        }
+       int sum;
+       sum=sum+p;
+        a=a/10;
+        c--;
+        }
+        printf((sum!=b)?"yes":"no");}
+    
